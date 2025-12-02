@@ -20,7 +20,7 @@ use Joomla\Registry\Registry;
 HTMLHelper::_('behavior.keepalive');
 HTMLHelper::_('bootstrap.tooltip');
 HTMLHelper::_('behavior.formvalidator');
-HTMLHelper::_('formbehavior.chosen', 'select');
+// Note: 'formbehavior.chosen' is deprecated in Joomla 4+, using native select styling instead
 
 $params     = new Registry;
 

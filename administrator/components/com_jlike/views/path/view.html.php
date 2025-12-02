@@ -103,9 +103,9 @@ class JlikeViewPath extends HtmlView
 		require_once JPATH_COMPONENT . '/helpers/jlike.php';
 
 		ToolbarHelper::title(Text::_('COM_JLIKE_VIEW_PATH'));
-		ToolbarHelper::apply('path.apply', 'TOOLBAR_APPLY');
-		ToolbarHelper::save('path.save', 'TOOLBAR_SAVE');
+		ToolbarHelper::apply('path.apply', 'JTOOLBAR_APPLY');
+		ToolbarHelper::save('path.save', 'JTOOLBAR_SAVE');
 		ToolbarHelper::custom('path.save2new', 'save-new.png', 'save-new_f2.png', 'TOOLBAR_SAVE_AND_NEW', false);
-		ToolbarHelper::cancel('path.cancel', 'TOOLBAR_CANCEL');
+		ToolbarHelper::cancel('path.cancel', 'JTOOLBAR_CANCEL');
 	}
 }

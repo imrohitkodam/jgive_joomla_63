@@ -95,7 +95,7 @@ class TjnotificationsViewLogs extends HtmlView
 
 		if ($this->canDo->get('core.delete'))
 		{
-			ToolbarHelper::deleteList('JGLOBAL_CONFIRM_DELETE', 'logs.delete', 'TOOLBAR_DELETE');
+			ToolbarHelper::deleteList('JGLOBAL_CONFIRM_DELETE', 'logs.delete', 'JTOOLBAR_DELETE');
 		}
 	}
 }

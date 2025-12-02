@@ -23,7 +23,7 @@ use Joomla\CMS\Language\Text;
  *
  * @since    2.2
  */
-class JFormFieldHeader extends JFormField
+class JFormFieldHeader extends FormField
 {
 	protected $type = 'Header';
 

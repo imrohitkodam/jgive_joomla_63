@@ -22,7 +22,7 @@ use Joomla\CMS\Form\Field\ListField;
  * @since  __DEPLOY_VERSION__
  */
 
-class JFormFieldCluster extends JFormFieldList
+class JFormFieldCluster extends ListField
 {
 	/**
 	 * The form field type.

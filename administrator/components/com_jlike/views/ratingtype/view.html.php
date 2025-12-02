@@ -97,9 +97,9 @@ class JlikeViewRatingtype extends HtmlView
 	protected function addToolbar()
 	{
 		ToolbarHelper::title(Text::_('COM_JLIKE_VIEW_TITLE_RATING_TYPE'), 'pencil-2');
-		ToolbarHelper::apply('ratingtype.apply', 'TOOLBAR_APPLY');
-		ToolbarHelper::save('ratingtype.save', 'TOOLBAR_SAVE');
+		ToolbarHelper::apply('ratingtype.apply', 'JTOOLBAR_APPLY');
+		ToolbarHelper::save('ratingtype.save', 'JTOOLBAR_SAVE');
 		ToolbarHelper::custom('ratingtype.save2new', 'save-new.png', 'save-new_f2.png', 'TOOLBAR_SAVE_AND_NEW', false);
-		ToolbarHelper::cancel('ratingtype.cancel', 'TOOLBAR_CANCEL');
+		ToolbarHelper::cancel('ratingtype.cancel', 'JTOOLBAR_CANCEL');
 	}
 }

@@ -66,13 +66,13 @@ class TjnotificationsHelper extends ContentHelper
 			}
 		}
 
-		/*HTMLHelperSidebar::addEntry(
+		/*JHtmlSidebar::addEntry(
 			Text::_('COM_TJNOTIFICATIONS_TITLE_NOTIFICATIONS'),
 			'index.php?option=com_tjnotifications&view=notifications',
 			$view == 'notifications'
 		);
 
-		HTMLHelperSidebar::addEntry(
+		JHtmlSidebar::addEntry(
 			Text::_('COM_TJNOTIFICATIONS_TITLE_NOTIFICATIONLOGS'),
 			'index.php?option=com_tjnotifications&view=logs',
 			$view == 'logs'

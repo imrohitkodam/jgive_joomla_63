@@ -21,7 +21,7 @@ use Joomla\CMS\Form\Field\ListField;
  *
  * @since  1.7.0
  */
-class JFormFieldSQL extends JFormFieldList
+class JFormFieldSQL extends ListField
 {
 	/**
 	 * The form field type.

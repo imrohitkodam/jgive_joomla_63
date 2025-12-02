@@ -37,6 +37,6 @@ class jlikeViewElement_config extends HtmlView
 	{
 		ToolbarHelper::title(Text::_('COM_JLIKE_CONTENT_TYPE'), 'jlike.png');
 
-		ToolbarHelper::apply('save', 'TOOLBAR_APPLY');
+		ToolbarHelper::apply('save', 'JTOOLBAR_APPLY');
 	}
 }

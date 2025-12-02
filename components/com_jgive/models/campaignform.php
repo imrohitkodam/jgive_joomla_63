@@ -46,8 +46,8 @@ if (file_exists($campaignPath)) {
 	require_once $campaignPath;
 }
 
-JModelLegacy::addIncludePath(JPATH_SITE . '/components/com_jgive/models');
-JModelLegacy::addIncludePath(JPATH_SITE . '/components/com_tjprivacy/models');
+BaseDatabaseModel::addIncludePath(JPATH_SITE . '/components/com_jgive/models');
+BaseDatabaseModel::addIncludePath(JPATH_SITE . '/components/com_tjprivacy/models');
 
 Table::addIncludePath(JPATH_ROOT . '/administrator/components/com_tjprivacy/tables');
 Table::addIncludePath(JPATH_ROOT . '/administrator/components/com_jgive/tables');

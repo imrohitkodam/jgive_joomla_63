@@ -89,7 +89,7 @@ echo Text::_('COM_JGIVE_REMOVE_TOOLTIP');
  *
  * @since    2.2
  */
-class JFormFieldCommision extends JFormField
+class JFormFieldCommision extends FormField
 {
 	protected $type = 'Commision';
 

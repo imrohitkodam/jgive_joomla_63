@@ -34,7 +34,7 @@ if (File::exists($tjStrapperPath))
  *
  * @since    2.2
  */
-class JFormFieldLegend extends JFormField
+class JFormFieldLegend extends FormField
 {
 	/**
 	 * The form field type.

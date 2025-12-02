@@ -68,9 +68,9 @@ class JlikeViewContent extends HtmlView
 		require_once JPATH_COMPONENT . '/helpers/jlike.php';
 
 		ToolbarHelper::title(Text::_('COM_JLIKE_VIEW_TITLE_CONTENT'));
-		ToolbarHelper::apply('content.apply', 'TOOLBAR_APPLY');
-		ToolbarHelper::save('content.save', 'TOOLBAR_SAVE');
+		ToolbarHelper::apply('content.apply', 'JTOOLBAR_APPLY');
+		ToolbarHelper::save('content.save', 'JTOOLBAR_SAVE');
 		ToolbarHelper::custom('content.save2new', 'save-new.png', 'save-new_f2.png', 'TOOLBAR_SAVE_AND_NEW', false);
-		ToolbarHelper::cancel('content.cancel', 'TOOLBAR_CANCEL');
+		ToolbarHelper::cancel('content.cancel', 'JTOOLBAR_CANCEL');
 	}
 }

@@ -22,7 +22,7 @@ JLoader::import('integrations', JPATH_SITE . '/components/com_jgive/helpers');
  *
  * @since  2.1
  */
-class JFormFieldGroupId extends JFormField
+class JFormFieldGroupId extends FormField
 {
 	/**
 	 * Methods to display jomsocial group

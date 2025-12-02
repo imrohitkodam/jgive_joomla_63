@@ -18,7 +18,7 @@ use Joomla\CMS\Language\Text;
  *
  * @since  1.3
  */
-class JFormFieldlayoutfield extends JFormField
+class JFormFieldlayoutfield extends FormField
 {
 	/**
 	 * The form field type.

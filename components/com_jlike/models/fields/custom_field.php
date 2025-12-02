@@ -20,7 +20,7 @@ use Joomla\CMS\Form\FormField;
  * @since       2.2
  */
 
-class JFormFieldCustom_Field extends JFormField
+class JFormFieldCustom_Field extends FormField
 {
 	/**
 	 * The form field type.

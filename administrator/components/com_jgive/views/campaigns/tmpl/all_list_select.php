@@ -23,7 +23,7 @@ HTMLHelper::_('behavior.multiselect'); // only for list tables
 
 
 $document = Factory::getDocument();
-ToolbarHelper::DeleteList(Text::_('COM_JGIVE_DELETE_CONFRIM'), 'remove', 'TOOLBAR_DELETE');
+ToolbarHelper::DeleteList(Text::_('COM_JGIVE_DELETE_CONFRIM'), 'remove', 'JTOOLBAR_DELETE');
 
 $listOrder = $this->state->get('list.ordering');
 $listDirn  = $this->state->get('list.direction');

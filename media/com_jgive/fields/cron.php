@@ -23,7 +23,7 @@ use Joomla\CMS\Uri\Uri;
  *
  * @since    2.2
  */
-class JFormFieldCron extends JFormField
+class JFormFieldCron extends FormField
 {
 	public $type = 'Cron';
 

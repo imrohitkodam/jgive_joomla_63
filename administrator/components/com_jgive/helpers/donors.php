@@ -32,13 +32,13 @@ class JGiveHelpersDonors
 	 */
 	public static function addSubmenu($vName = '')
 	{
-		HTMLHelperSidebar::addEntry(
+		JHtmlSidebar::addEntry(
 			Text::_('COM_JGIVE_CAMPAIGNS_DONORS'),
 			'index.php?option=com_jgive&view=donors',
 			$vName == 'donors'
 		);
 
-		HTMLHelperSidebar::addEntry(
+		JHtmlSidebar::addEntry(
 			Text::_('COM_JGIVE_CAMPAIGNS_DONORS'),
 			'index.php?option=com_jgive&view=donors',
 			$vName == 'donors'

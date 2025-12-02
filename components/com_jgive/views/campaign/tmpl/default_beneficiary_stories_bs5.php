@@ -11,9 +11,10 @@
 // No direct access
 defined('_JEXEC') or die;
 use Joomla\CMS\Language\Text;
+use Joomla\CMS\Uri\Uri;
 
 // Default image path dynamically
-$defaultImagePath = JUri::root() . 'media/com_jgive/images/default_avatar.png';
+$defaultImagePath = Uri::root() . 'media/com_jgive/images/default_avatar.png';
 
 // Check if the campaign has beneficiary stories
 if (!empty($this->item['campaign']->beneficiaryStories)) : ?>

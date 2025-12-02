@@ -19,7 +19,7 @@ use Joomla\CMS\Form\FormField;
  *
  * @since  1.0.0
  */
-class JFormFieldImagedisplay extends JFormField
+class JFormFieldImagedisplay extends FormField
 {
 	protected $type = 'Imagedisplay';
 

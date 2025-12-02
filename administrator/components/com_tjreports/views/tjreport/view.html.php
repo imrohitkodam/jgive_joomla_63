@@ -92,7 +92,7 @@ class TjreportsViewTjreport extends HtmlView
 		ToolbarHelper::save('tjreport.save');
 		ToolbarHelper::cancel(
 			'tjreport.cancel',
-			$isNew ? 'TOOLBAR_CANCEL' : 'TOOLBAR_CLOSE'
+			$isNew ? 'JTOOLBAR_CANCEL' : 'JTOOLBAR_CLOSE'
 		);
 	}
 

@@ -89,8 +89,8 @@ class JLikeViewRatingtypes extends HtmlView
 		ToolbarHelper::title($title, 'list');
 		ToolbarHelper::addNew('ratingtype.add');
 		ToolbarHelper::editList('ratingtype.edit');
-		ToolbarHelper::publish('ratingtypes.publish', 'TOOLBAR_PUBLISH', true);
-		ToolbarHelper::unpublish('ratingtypes.unpublish', 'TOOLBAR_UNPUBLISH', true);
+		ToolbarHelper::publish('ratingtypes.publish', 'JTOOLBAR_PUBLISH', true);
+		ToolbarHelper::unpublish('ratingtypes.unpublish', 'JTOOLBAR_UNPUBLISH', true);
 		ToolbarHelper::deleteList(
 			Text::_('COM_JLIKE_VIEW_DELETE_MESSAGE'), 'ratingtypes.delete', Text::_('COM_JLIKE_VIEW_DELETE')
 		);

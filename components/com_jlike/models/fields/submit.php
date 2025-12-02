@@ -6,7 +6,7 @@ use Joomla\CMS\Form\FormField;
 use Joomla\CMS\Language\Text;
 
 
-class JFormFieldSubmit extends JFormField {
+class JFormFieldSubmit extends FormField {
 
     protected $type = 'submit';
     protected $value;

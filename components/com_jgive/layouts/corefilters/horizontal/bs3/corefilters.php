@@ -24,7 +24,7 @@ $app            = Factory::getApplication();
 $jinput         = $app->input;
 $campaignHelper = new campaignHelper;
 
-JModelLegacy::addIncludePath(JPATH_SITE . '/components/com_jgive/models');
+BaseDatabaseModel::addIncludePath(JPATH_SITE . '/components/com_jgive/models');
 $campaignsModel               = BaseDatabaseModel::getInstance('Campaigns', 'JgiveModel');
 $jgiveParams                  = $campaignsModel->getState();
 $campaigns_to_show            = $campaignHelper->campaignsToShowOptions();

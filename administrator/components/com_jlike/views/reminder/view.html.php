@@ -82,8 +82,8 @@ class JlikeViewReminder extends HtmlView
 		// If not checked out, can save the item.
 		if (!$checkedOut && ($canDo->get('core.edit') || ($canDo->get('core.create'))))
 		{
-			ToolbarHelper::apply('reminder.apply', 'TOOLBAR_APPLY');
-			ToolbarHelper::save('reminder.save', 'TOOLBAR_SAVE');
+			ToolbarHelper::apply('reminder.apply', 'JTOOLBAR_APPLY');
+			ToolbarHelper::save('reminder.save', 'JTOOLBAR_SAVE');
 		}
 
 		if (!$checkedOut && ($canDo->get('core.create')))
@@ -105,11 +105,11 @@ class JlikeViewReminder extends HtmlView
 
 		if (empty($this->item->id))
 		{
-			ToolbarHelper::cancel('reminder.cancel', 'TOOLBAR_CANCEL');
+			ToolbarHelper::cancel('reminder.cancel', 'JTOOLBAR_CANCEL');
 		}
 		else
 		{
-			ToolbarHelper::cancel('reminder.cancel', 'TOOLBAR_CLOSE');
+			ToolbarHelper::cancel('reminder.cancel', 'JTOOLBAR_CLOSE');
 		}
 	}
 }

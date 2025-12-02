@@ -32,7 +32,7 @@ FormHelper::loadFieldClass('textarea');
  *
  * @since    2.2
  */
-class JFormFieldcbfieldmapping extends JFormFieldTextarea
+class JFormFieldcbfieldmapping extends TextareaField
 {
 	protected $type = 'cbfieldmapping';
 

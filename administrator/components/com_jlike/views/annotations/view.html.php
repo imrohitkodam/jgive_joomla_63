@@ -88,7 +88,7 @@ class JlikeViewAnnotations extends HtmlView
 		{
 			if ($canDo->get('core.edit') && isset($this->items[0]))
 			{
-				ToolbarHelper::editList('annotation.edit', 'TOOLBAR_EDIT');
+				ToolbarHelper::editList('annotation.edit', 'JTOOLBAR_EDIT');
 			}
 		}
 
@@ -97,13 +97,13 @@ class JlikeViewAnnotations extends HtmlView
 			if (isset($this->items[0]->state))
 			{
 				ToolbarHelper::divider();
-				ToolbarHelper::custom('annotations.publish', 'publish.png', 'publish_f2.png', 'TOOLBAR_PUBLISH', true);
-				ToolbarHelper::custom('annotations.unpublish', 'unpublish.png', 'unpublish_f2.png', 'TOOLBAR_UNPUBLISH', true);
+				ToolbarHelper::custom('annotations.publish', 'publish.png', 'publish_f2.png', 'JTOOLBAR_PUBLISH', true);
+				ToolbarHelper::custom('annotations.unpublish', 'unpublish.png', 'unpublish_f2.png', 'JTOOLBAR_UNPUBLISH', true);
 			}
 			elseif (isset($this->items[0]))
 			{
 				// If this component does not use state then show a direct delete button as we can not trash
-				ToolbarHelper::deleteList('', 'annotations.delete', 'TOOLBAR_DELETE');
+				ToolbarHelper::deleteList('', 'annotations.delete', 'JTOOLBAR_DELETE');
 			}
 
 			if (isset($this->items[0]->state))
@@ -114,7 +114,7 @@ class JlikeViewAnnotations extends HtmlView
 
 			if (isset($this->items[0]->checked_out))
 			{
-				ToolbarHelper::custom('annotations.checkin', 'checkin.png', 'checkin_f2.png', 'TOOLBAR_CHECKIN', true);
+				ToolbarHelper::custom('annotations.checkin', 'checkin.png', 'checkin_f2.png', 'JTOOLBAR_CHECKIN', true);
 			}
 		}
 
@@ -123,12 +123,12 @@ class JlikeViewAnnotations extends HtmlView
 		{
 			if ($state->get('filter.state') == -2 && $canDo->get('core.delete'))
 			{
-				ToolbarHelper::deleteList('', 'annotations.delete', 'TOOLBAR_EMPTY_TRASH');
+				ToolbarHelper::deleteList('', 'annotations.delete', 'JTOOLBAR_EMPTY_TRASH');
 				ToolbarHelper::divider();
 			}
 			elseif ($canDo->get('core.edit.state'))
 			{
-				ToolbarHelper::trash('annotations.trash', 'TOOLBAR_TRASH');
+				ToolbarHelper::trash('annotations.trash', 'JTOOLBAR_TRASH');
 				ToolbarHelper::divider();
 			}
 		}

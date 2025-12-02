@@ -16,7 +16,7 @@ use Joomla\CMS\HTML\HTMLHelper;
 /**
  * Supports a value from an external table
  */
-class JFormFieldForeignKey extends JFormField
+class JFormFieldForeignKey extends FormField
 {
 
 	/**

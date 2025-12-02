@@ -137,8 +137,8 @@ class TjnotificationsViewSubscription extends HtmlView
 		// If not checked out, can save the item.
 		if (!$checkedOut && ($canDo->get('core.edit') || ($canDo->get('core.create'))))
 		{
-			ToolbarHelper::apply('subscription.apply', 'TOOLBAR_APPLY');
-			ToolbarHelper::save('subscription.save', 'TOOLBAR_SAVE');
+			ToolbarHelper::apply('subscription.apply', 'JTOOLBAR_APPLY');
+			ToolbarHelper::save('subscription.save', 'JTOOLBAR_SAVE');
 		}
 
 		if (!$checkedOut && ($canDo->get('core.create')))
@@ -154,11 +154,11 @@ class TjnotificationsViewSubscription extends HtmlView
 
 		if (empty($this->item->id))
 		{
-			ToolbarHelper::cancel('subscription.cancel', 'TOOLBAR_CANCEL');
+			ToolbarHelper::cancel('subscription.cancel', 'JTOOLBAR_CANCEL');
 		}
 		else
 		{
-			ToolbarHelper::cancel('subscription.cancel', 'TOOLBAR_CLOSE');
+			ToolbarHelper::cancel('subscription.cancel', 'JTOOLBAR_CLOSE');
 		}
 	}
 }

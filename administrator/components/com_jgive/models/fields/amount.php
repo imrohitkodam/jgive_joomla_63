@@ -21,7 +21,7 @@ require_once JPATH_LIBRARIES . '/techjoomla/tjmoney/tjmoney.php';
  *
  * @since  2.1.0
  */
-class JFormFieldAmount extends JFormField
+class JFormFieldAmount extends FormField
 {
 	protected $type = 'Goalamount';
 

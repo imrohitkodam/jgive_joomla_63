@@ -147,9 +147,9 @@ class JLikeModelPathDetail extends FormModel
 			// Attempt to load the row.
 			if ($table->load($id))
 			{
-				// Convert the JTable to a clean JObject.
+				// Convert the JTable to a clean CMSObject.
 				$properties  = $table->getProperties(1);
-				$this->item = ArrayHelper::toObject($properties, 'JObject');
+				$this->item = ArrayHelper::toObject($properties, CMSObject::class);
 
 				$pathId = $this->item->path_id;
 				$userId = $this->user->id;

@@ -4,7 +4,7 @@ use Joomla\CMS\Form\FormField;
 use Joomla\CMS\Factory;
 use Joomla\CMS\Uri\Uri;
 use Joomla\CMS\Language\Text;
-class JFormFieldHeader extends JFormField
+class JFormFieldHeader extends FormField
 {
 	var	$type='Header';
 	function getInput()

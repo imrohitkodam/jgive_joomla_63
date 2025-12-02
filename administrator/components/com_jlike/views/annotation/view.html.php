@@ -70,17 +70,17 @@ class JlikeViewAnnotation extends HtmlView
 		// If not checked out, can save the item.
 		if (!$checkedOut && ($canDo->get('core.edit') || ($canDo->get('core.create'))))
 		{
-			ToolbarHelper::apply('annotation.apply', 'TOOLBAR_APPLY');
-			ToolbarHelper::save('annotation.save', 'TOOLBAR_SAVE');
+			ToolbarHelper::apply('annotation.apply', 'JTOOLBAR_APPLY');
+			ToolbarHelper::save('annotation.save', 'JTOOLBAR_SAVE');
 		}
 
 		if (empty($this->item->id))
 		{
-			ToolbarHelper::cancel('annotation.cancel', 'TOOLBAR_CANCEL');
+			ToolbarHelper::cancel('annotation.cancel', 'JTOOLBAR_CANCEL');
 		}
 		else
 		{
-			ToolbarHelper::cancel('annotation.cancel', 'TOOLBAR_CLOSE');
+			ToolbarHelper::cancel('annotation.cancel', 'JTOOLBAR_CLOSE');
 		}
 	}
 }

@@ -26,7 +26,7 @@ FormHelper::loadFieldClass('groupedlist');
  * @since       2.0.1
  */
 
-class JFormFieldMobilenumberfields extends JFormFieldGroupedList
+class JFormFieldMobilenumberfields extends GroupedlistField
 {
 	/**
 	 * The form field type.

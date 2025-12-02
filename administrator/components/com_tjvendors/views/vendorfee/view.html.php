@@ -89,16 +89,16 @@ class TjvendorsViewVendorFee extends HtmlView
 		$clientTitle = TjvendorFrontHelper::getClientName($client);
 		ToolbarHelper::title($clientTitle . '  ' . $viewTitle, 'pencil.png');
 
-		ToolbarHelper::apply('vendorfee.apply', 'TOOLBAR_APPLY');
-		ToolbarHelper::save('vendorfee.save', 'TOOLBAR_SAVE');
+		ToolbarHelper::apply('vendorfee.apply', 'JTOOLBAR_APPLY');
+		ToolbarHelper::save('vendorfee.save', 'JTOOLBAR_SAVE');
 
 		if (empty($this->item->id))
 		{
-			ToolbarHelper::cancel('vendorfee.cancel', 'TOOLBAR_CANCEL');
+			ToolbarHelper::cancel('vendorfee.cancel', 'JTOOLBAR_CANCEL');
 		}
 		else
 		{
-			ToolbarHelper::cancel('vendorfee.cancel', 'TOOLBAR_CLOSE');
+			ToolbarHelper::cancel('vendorfee.cancel', 'JTOOLBAR_CLOSE');
 		}
 	}
 }

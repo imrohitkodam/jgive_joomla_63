@@ -32,7 +32,7 @@ HTMLHelper::script(Uri::root(true) . '/libraries/techjoomla/assets/js/houseKeepi
 // Import CSS
 $document = Factory::getDocument();
 $document->addStyleSheet('components/com_tjfields/assets/css/tjfields.css');
-$input = jFactory::getApplication()->input;
+$input = Factory::getApplication()->input;
 $user	= Factory::getUser();
 $userId	= $user->get('id');
 $listOrder	= $this->state->get('list.ordering');

@@ -18,7 +18,7 @@ use Joomla\CMS\HTML\HTMLHelper;
  *
  * @since  1.3
  */
-class JFormFieldformsourcefield extends JFormField
+class JFormFieldformsourcefield extends FormField
 {
 	/**
 	 * The form field type.

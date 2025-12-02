@@ -96,7 +96,7 @@ class TjvendorsViewVendors extends HtmlView
 		if (JVERSION >= '4.0.0')
 		{
 			$dropdown = $toolbar->dropdownButton('status-group')
-				->text('TOOLBAR_CHANGE_STATUS')
+				->text('JTOOLBAR_CHANGE_STATUS')
 				->toggleSplit(false)
 				->icon('icon-ellipsis-h')
 				->buttonClass('btn btn-action')
@@ -118,13 +118,13 @@ class TjvendorsViewVendors extends HtmlView
 				if (isset($this->items[0]->state))
 				{
 					ToolbarHelper::divider();
-					ToolbarHelper::custom('vendors.publish', 'publish.png', 'publish_f2.png', 'TOOLBAR_PUBLISH', true);
-					ToolbarHelper::custom('vendors.unpublish', 'unpublish.png', 'unpublish_f2.png', 'TOOLBAR_UNPUBLISH', true);
+					ToolbarHelper::custom('vendors.publish', 'publish.png', 'publish_f2.png', 'JTOOLBAR_PUBLISH', true);
+					ToolbarHelper::custom('vendors.unpublish', 'unpublish.png', 'unpublish_f2.png', 'JTOOLBAR_UNPUBLISH', true);
 				}
 
 				if (isset($this->items[0]))
 				{
-					ToolbarHelper::deleteList('', 'vendors.delete', 'TOOLBAR_DELETE');
+					ToolbarHelper::deleteList('', 'vendors.delete', 'JTOOLBAR_DELETE');
 				}
 			}
 			else

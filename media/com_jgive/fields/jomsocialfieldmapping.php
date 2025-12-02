@@ -31,7 +31,7 @@ FormHelper::loadFieldClass('textarea');
  *
  * @since    2.2
  */
-class JFormFieldjomsocialfieldmapping extends JFormFieldTextarea
+class JFormFieldjomsocialfieldmapping extends TextareaField
 {
 	protected $type = 'jomsocialfieldmapping';
 

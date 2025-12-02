@@ -14,6 +14,7 @@ use Joomla\CMS\Factory;
 use Joomla\CMS\HTML\HTMLHelper;
 use Joomla\CMS\Language\Text;
 use Joomla\CMS\Form\FormField;
+use Joomla\CMS\Toolbar\ToolbarHelper;
 
 jimport('joomla.application.component.view');
 
@@ -138,12 +139,12 @@ class TjfieldsViewCities extends HtmlView
 		{
 			if ($canDo->get('core.create'))
 			{
-				ToolbarHelper::addNew('city.add', 'TOOLBAR_NEW');
+				ToolbarHelper::addNew('city.add', 'JTOOLBAR_NEW');
 			}
 
 			if ($canDo->get('core.edit') && isset($this->items[0]))
 			{
-				ToolbarHelper::editList('city.edit', 'TOOLBAR_EDIT');
+				ToolbarHelper::editList('city.edit', 'JTOOLBAR_EDIT');
 			}
 		}
 
@@ -152,8 +153,8 @@ class TjfieldsViewCities extends HtmlView
 			if (isset($this->items[0]->state))
 			{
 				ToolbarHelper::divider();
-				ToolbarHelper::custom('cities.publish', 'publish.png', 'publish_f2.png', 'TOOLBAR_PUBLISH', true);
-				ToolbarHelper::custom('cities.unpublish', 'unpublish.png', 'unpublish_f2.png', 'TOOLBAR_UNPUBLISH', true);
+				ToolbarHelper::custom('cities.publish', 'publish.png', 'publish_f2.png', 'JTOOLBAR_PUBLISH', true);
+				ToolbarHelper::custom('cities.unpublish', 'unpublish.png', 'unpublish_f2.png', 'JTOOLBAR_UNPUBLISH', true);
 			}
 		}
 
@@ -162,11 +163,7 @@ class TjfieldsViewCities extends HtmlView
 			ToolbarHelper::preferences('com_tjfields');
 		}
 
-		if (JVERSION >= '3.0')
-		{
-			// Set sidebar action
-			HTMLHelperSidebar::setAction('index.php?option=com_tjfields&view=cities');
-		}
+			// Note: HTMLHelperSidebar was removed in Joomla 4+
 
 		$this->extra_sidebar = '';
 	}

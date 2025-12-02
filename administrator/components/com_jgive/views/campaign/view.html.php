@@ -174,6 +174,6 @@ class JGiveViewCampaign extends HtmlView
 		ToolbarHelper::save('campaign.save');
 		ToolbarHelper::save2new('campaign.save2new');
 
-		ToolbarHelper::cancel('campaign.cancel', $isNew ? 'TOOLBAR_CANCEL' : 'TOOLBAR_CLOSE');
+		ToolbarHelper::cancel('campaign.cancel', $isNew ? 'JTOOLBAR_CANCEL' : 'JTOOLBAR_CLOSE');
 	}
 }

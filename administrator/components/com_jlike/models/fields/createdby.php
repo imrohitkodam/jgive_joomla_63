@@ -15,7 +15,7 @@ use Joomla\CMS\Factory;
 /**
  * Supports an HTML select list of categories
  */
-class JFormFieldCreatedby extends JFormField
+class JFormFieldCreatedby extends FormField
 {
 	/**
 	 * The form field type.

@@ -248,7 +248,7 @@ class JgiveViewOrganizations extends BaseHtmlView
 	{
 		// Add toolbar buttons
 		jimport('techjoomla.tjtoolbar.toolbar');
-		$tjbar = TJToolbar::getInstance('tjtoolbar', 'pull-right');
+		$tjbar = TToolbar::getInstance('tjtoolbar', 'pull-right');
 		$smallBtnClassName = (JGIVE_LOAD_BOOTSTRAP_VERSION == 'bs3') ? 'btn-small' : 'btn-sm';
 
 		// Create New individual contact

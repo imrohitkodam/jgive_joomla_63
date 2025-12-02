@@ -13,6 +13,7 @@ defined('_JEXEC') or die('Restricted access');
 use Joomla\CMS\HTML\HTMLHelper;
 use Joomla\CMS\Factory;
 use Joomla\CMS\Form\FormField;
+use Joomla\CMS\Form\Field\TextareaField;
 use Joomla\CMS\Component\ComponentHelper;
 use Joomla\CMS\Form\FormHelper;
 
@@ -30,7 +31,7 @@ FormHelper::loadFieldClass('textarea');
  *
  * @since    2.2
  */
-class JFormFieldeasyprofilefieldmapping extends JFormFieldTextarea
+class JFormFieldeasyprofilefieldmapping extends TextareaField
 {
 	protected $type = 'easyprofilefieldmapping';
 

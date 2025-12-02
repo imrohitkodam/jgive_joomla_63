@@ -13,6 +13,7 @@ use Joomla\CMS\MVC\View\HtmlView;
 use Joomla\CMS\HTML\HTMLHelper;
 use Joomla\CMS\Factory;
 use Joomla\CMS\Language\Text;
+use Joomla\CMS\Toolbar\ToolbarHelper;
 
 jimport('joomla.application.component.view');
 
@@ -118,7 +119,7 @@ class TjfieldsViewGroups extends HtmlView
 		{
 			if ($canDo->get('core.create'))
 			{
-				ToolbarHelper::addNew('group.add', 'TOOLBAR_NEW');
+				ToolbarHelper::addNew('group.add', 'JTOOLBAR_NEW');
 			}
 		}
 
@@ -127,18 +128,18 @@ class TjfieldsViewGroups extends HtmlView
 			if (isset($this->items[0]->state))
 			{
 				ToolbarHelper::divider();
-				ToolbarHelper::custom('groups.publish', 'publish.png', 'publish_f2.png', 'TOOLBAR_PUBLISH', true);
-				ToolbarHelper::custom('groups.unpublish', 'unpublish.png', 'unpublish_f2.png', 'TOOLBAR_UNPUBLISH', true);
+				ToolbarHelper::custom('groups.publish', 'publish.png', 'publish_f2.png', 'JTOOLBAR_PUBLISH', true);
+				ToolbarHelper::custom('groups.unpublish', 'unpublish.png', 'unpublish_f2.png', 'JTOOLBAR_UNPUBLISH', true);
 			}
 			elseif (isset($this->items[0]))
 			{
 				// If this component does not use state then show a direct delete button as we can not trash
-				ToolbarHelper::deleteList('', 'groups.delete', 'TOOLBAR_DELETE');
+				ToolbarHelper::deleteList('', 'groups.delete', 'JTOOLBAR_DELETE');
 			}
 
 			if (isset($this->items[0]->checked_out))
 			{
-				ToolbarHelper::custom('groups.checkin', 'checkin.png', 'checkin_f2.png', 'TOOLBAR_CHECKIN', true);
+				ToolbarHelper::custom('groups.checkin', 'checkin.png', 'checkin_f2.png', 'JTOOLBAR_CHECKIN', true);
 			}
 		}
 
@@ -147,12 +148,12 @@ class TjfieldsViewGroups extends HtmlView
 		{
 			if ($state->get('filter.state') == -2 && $canDo->get('core.delete'))
 			{
-				ToolbarHelper::deleteList('', 'groups.delete', 'TOOLBAR_EMPTY_TRASH');
+				ToolbarHelper::deleteList('', 'groups.delete', 'JTOOLBAR_EMPTY_TRASH');
 				ToolbarHelper::divider();
 			}
 			elseif ($canDo->get('core.edit.state'))
 			{
-				ToolbarHelper::trash('groups.trash', 'TOOLBAR_TRASH');
+				ToolbarHelper::trash('groups.trash', 'JTOOLBAR_TRASH');
 				ToolbarHelper::divider();
 			}
 		}

@@ -85,7 +85,7 @@ class TjvendorsViewVendorFees extends HtmlView
 
 		if ($canDo->get('core.edit') && isset($this->items[0]))
 		{
-			ToolbarHelper::editList('vendorfee.edit', 'TOOLBAR_EDIT');
+			ToolbarHelper::editList('vendorfee.edit', 'JTOOLBAR_EDIT');
 		}
 
 		$tjvendorFrontHelper = new TjvendorFrontHelper;
@@ -97,8 +97,8 @@ class TjvendorsViewVendorFees extends HtmlView
 			if (isset($this->items[0]->state))
 			{
 				ToolbarHelper::divider();
-				ToolbarHelper::custom('vendorfees.publish', 'publish.png', 'publish_f2.png', 'TOOLBAR_PUBLISH', true);
-				ToolbarHelper::custom('vendorfees.unpublish', 'unpublish.png', 'unpublish_f2.png', 'TOOLBAR_UNPUBLISH', true);
+				ToolbarHelper::custom('vendorfees.publish', 'publish.png', 'publish_f2.png', 'JTOOLBAR_PUBLISH', true);
+				ToolbarHelper::custom('vendorfees.unpublish', 'unpublish.png', 'unpublish_f2.png', 'JTOOLBAR_UNPUBLISH', true);
 			}
 		}
 

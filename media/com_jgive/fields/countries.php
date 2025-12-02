@@ -22,7 +22,7 @@ use Joomla\CMS\HTML\HTMLHelper;
  * @subpackage  com_jgive
  * @since       1.6.7
  */
-class JFormFieldCountries extends JFormField
+class JFormFieldCountries extends FormField
 {
 	protected $type = 'Countries';
 

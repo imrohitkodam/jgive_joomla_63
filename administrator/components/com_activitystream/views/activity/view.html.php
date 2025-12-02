@@ -90,7 +90,7 @@ class ActivityStreamViewActivity extends HtmlView
 
 		ToolbarHelper::cancel(
 			'activity.cancel',
-			$isNew ? 'TOOLBAR_CANCEL' : 'TOOLBAR_CLOSE'
+			$isNew ? 'JTOOLBAR_CANCEL' : 'JTOOLBAR_CLOSE'
 		);
 	}
 }

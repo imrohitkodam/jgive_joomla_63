@@ -69,9 +69,9 @@ class JlikeViewPathNodeGraph extends HtmlView
 		require_once JPATH_COMPONENT . '/helpers/jlike.php';
 
 		ToolbarHelper::title(Text::_('COM_JLIKE_VIEW_TITLE_PATHNODEGRAPH'));
-		ToolbarHelper::apply('pathnodegraph.apply', 'TOOLBAR_APPLY');
-		ToolbarHelper::save('pathnodegraph.save', 'TOOLBAR_SAVE');
+		ToolbarHelper::apply('pathnodegraph.apply', 'JTOOLBAR_APPLY');
+		ToolbarHelper::save('pathnodegraph.save', 'JTOOLBAR_SAVE');
 		ToolbarHelper::custom('pathnodegraph.save2new', 'save-new.png', 'save-new_f2.png', 'TOOLBAR_SAVE_AND_NEW', false);
-		ToolbarHelper::cancel('pathnodegraph.cancel', 'TOOLBAR_CANCEL');
+		ToolbarHelper::cancel('pathnodegraph.cancel', 'JTOOLBAR_CANCEL');
 	}
 }

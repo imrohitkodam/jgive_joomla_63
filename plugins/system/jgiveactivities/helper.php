@@ -610,6 +610,27 @@ class PlgSystemJgiveActivitiesHelper
 	 */
 	public function addCampaignActivity($campaignId, $campaignData)
 	{
+		// Check if jGiveFrontendHelper is initialized
+		if (!$this->jGiveFrontendHelper)
+		{
+			if (!class_exists('JgiveFrontendHelper'))
+			{
+				$JgiveFrontendHelperPath = JPATH_SITE . '/components/com_jgive/helper.php';
+				if (file_exists($JgiveFrontendHelperPath)) {
+					require_once $JgiveFrontendHelperPath;
+				}
+			}
+
+			if (class_exists('JgiveFrontendHelper'))
+			{
+				$this->jGiveFrontendHelper = new JgiveFrontendHelper;
+			}
+			else
+			{
+				return false;
+			}
+		}
+
 		$userId                      = (!empty($campaignData['creator_id'])) ? $campaignData['creator_id'] : Factory::getUser()->id;
 		$user                        = Factory::getUser($userId);
 		$activityData                = array();

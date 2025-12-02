@@ -121,8 +121,8 @@ class TjnotificationsViewNotification extends HtmlView
 		// If not checked out, can save the item.
 		if (!$checkedOut)
 		{
-			ToolbarHelper::apply('notification.apply', 'TOOLBAR_APPLY');
-			ToolbarHelper::save('notification.save', 'TOOLBAR_SAVE');
+			ToolbarHelper::apply('notification.apply', 'JTOOLBAR_APPLY');
+			ToolbarHelper::save('notification.save', 'JTOOLBAR_SAVE');
 			ToolbarHelper::custom('notification.save2new', 'save-new.png', 'save-new_f2.png', 'TOOLBAR_SAVE_AND_NEW', false);
 		}
 
@@ -134,11 +134,11 @@ class TjnotificationsViewNotification extends HtmlView
 
 		if (empty($this->item->id))
 		{
-			ToolbarHelper::cancel('notification.cancel', 'TOOLBAR_CANCEL');
+			ToolbarHelper::cancel('notification.cancel', 'JTOOLBAR_CANCEL');
 		}
 		else
 		{
-			ToolbarHelper::cancel('notification.cancel', 'TOOLBAR_CLOSE');
+			ToolbarHelper::cancel('notification.cancel', 'JTOOLBAR_CLOSE');
 		}
 	}
 

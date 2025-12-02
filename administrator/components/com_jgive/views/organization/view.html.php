@@ -90,7 +90,7 @@ class JgiveViewOrganization extends HtmlView
 		ToolbarHelper::save2new('organization.save2new');
 		ToolbarHelper::cancel(
 			'organization.cancel',
-			$isNew ? 'TOOLBAR_CANCEL' : 'TOOLBAR_CLOSE'
+			$isNew ? 'JTOOLBAR_CANCEL' : 'JTOOLBAR_CLOSE'
 		);
 	}
 

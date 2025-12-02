@@ -17,7 +17,7 @@ use Joomla\CMS\Language\Text;
 HTMLHelper::_('behavior.keepalive');
 HTMLHelper::_('bootstrap.tooltip');
 HTMLHelper::_('behavior.formvalidator');
-HTMLHelper::_('formbehavior.chosen', 'select');
+// Note: 'formbehavior.chosen' is deprecated in Joomla 4+, using native select styling instead
 
 // Load admin language file
 $lang = Factory::getLanguage();

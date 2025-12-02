@@ -97,7 +97,9 @@ $document=Factory::getDocument();
                 </div>
             </div>
         <?php
-        if (count($this->promoterDashboardData['params']['camp_type']) == 2)
+        $campType = $this->promoterDashboardData['params']['camp_type'] ?? [];
+        $campTypeCount = is_array($campType) ? count($campType) : (is_string($campType) && !empty($campType) ? 1 : 0);
+        if ($campTypeCount == 2)
         {
         ?>
             <div class="col-xs-12 col-sm-3 campaign__filter--ht">

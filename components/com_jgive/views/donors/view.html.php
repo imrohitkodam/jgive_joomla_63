@@ -132,7 +132,7 @@ class JgiveViewDonors extends HtmlView
 
 		// Add toolbar buttons
 		jimport('techjoomla.tjtoolbar.toolbar');
-		$tjbar = TJToolbar::getInstance('tjtoolbar', 'pull-right float-end');
+		$tjbar = TToolbar::getInstance('tjtoolbar', 'pull-right float-end');
 
 		// Load library language file
 		Factory::getLanguage()->load('lib_techjoomla', JPATH_SITE, null, false, true);

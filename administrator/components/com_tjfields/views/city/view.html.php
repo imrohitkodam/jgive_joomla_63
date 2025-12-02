@@ -12,6 +12,7 @@ defined('_JEXEC') or die();
 use Joomla\CMS\MVC\View\HtmlView;
 use Joomla\CMS\Factory;
 use Joomla\CMS\Language\Text;
+use Joomla\CMS\Toolbar\ToolbarHelper;
 
 jimport('joomla.application.component.view');
 
@@ -113,17 +114,17 @@ class TjfieldsViewCity extends HtmlView
 		// If not checked out, can save the item.
 		if (! $checkedOut && ($canDo->get('core.edit') || ($canDo->get('core.create'))))
 		{
-			ToolbarHelper::apply('city.apply', 'TOOLBAR_APPLY');
-			ToolbarHelper::save('city.save', 'TOOLBAR_SAVE');
+			ToolbarHelper::apply('city.apply', 'JTOOLBAR_APPLY');
+			ToolbarHelper::save('city.save', 'JTOOLBAR_SAVE');
 		}
 
 		if (empty($this->item->id))
 		{
-			ToolbarHelper::cancel('city.cancel', 'TOOLBAR_CANCEL');
+			ToolbarHelper::cancel('city.cancel', 'JTOOLBAR_CANCEL');
 		}
 		else
 		{
-			ToolbarHelper::cancel('city.cancel', 'TOOLBAR_CLOSE');
+			ToolbarHelper::cancel('city.cancel', 'JTOOLBAR_CLOSE');
 		}
 	}
 }

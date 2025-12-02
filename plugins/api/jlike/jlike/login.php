@@ -13,7 +13,7 @@ use Joomla\CMS\Factory;
 use Joomla\CMS\Language\Text;
 use Joomla\CMS\User\User;
 use Joomla\CMS\Session\Session;
-JModelLegacy::addIncludePath(JPATH_SITE . DS . 'components' . DS . 'com_api' . DS . 'models');
+BaseDatabaseModel::addIncludePath(JPATH_SITE . DS . 'components' . DS . 'com_api' . DS . 'models');
 require_once JPATH_SITE . DS . 'components' . DS . 'com_api' . DS . 'libraries' . DS . 'authentication' . DS . 'login.php';
 require_once JPATH_SITE . DS . 'components' . DS . 'com_api' . DS . 'models' . DS . 'key.php';
 require_once JPATH_SITE . DS . 'components' . DS . 'com_api' . DS . 'models' . DS . 'keys.php';

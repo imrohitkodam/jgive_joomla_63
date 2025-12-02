@@ -24,7 +24,7 @@ if (JVERSION >= 1.6)
 	 *
 	 * @since  1.0.0
 	 */
-	class JFormFieldGatewayplg extends JFormField
+	class JFormFieldGatewayplg extends FormField
 				{
 					protected $type = 'Gatewayplg';
 

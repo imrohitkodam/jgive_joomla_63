@@ -23,7 +23,7 @@ use Joomla\CMS\Language\Text;
  *
  * @since    2.2
  */
-class JFormFieldEmailsetting extends JFormField
+class JFormFieldEmailsetting extends FormField
 {
 	public $type = 'Emailsetting';
 

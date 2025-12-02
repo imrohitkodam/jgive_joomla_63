@@ -79,12 +79,12 @@ class JlikeViewRecommendations extends HtmlView
 		{
 			if ($canDo->get('core.create'))
 			{
-				ToolbarHelper::addNew('todos.add', 'TOOLBAR_NEW');
+				ToolbarHelper::addNew('todos.add', 'JTOOLBAR_NEW');
 			}
 
 			if ($canDo->get('core.edit') && isset($this->items[0]))
 			{
-				ToolbarHelper::editList('todos.edit', 'TOOLBAR_EDIT');
+				ToolbarHelper::editList('todos.edit', 'JTOOLBAR_EDIT');
 			}
 		}
 
@@ -93,13 +93,13 @@ class JlikeViewRecommendations extends HtmlView
 			if (isset($this->items[0]->state))
 			{
 				ToolbarHelper::divider();
-				ToolbarHelper::custom('recommendations.publish', 'publish.png', 'publish_f2.png', 'TOOLBAR_PUBLISH', true);
-				ToolbarHelper::custom('recommendations.unpublish', 'unpublish.png', 'unpublish_f2.png', 'TOOLBAR_UNPUBLISH', true);
+				ToolbarHelper::custom('recommendations.publish', 'publish.png', 'publish_f2.png', 'JTOOLBAR_PUBLISH', true);
+				ToolbarHelper::custom('recommendations.unpublish', 'unpublish.png', 'unpublish_f2.png', 'JTOOLBAR_UNPUBLISH', true);
 			}
 			elseif (isset($this->items[0]))
 			{
 				// If this component does not use state then show a direct delete button as we can not trash
-				ToolbarHelper::deleteList('', 'recommendations.delete', 'TOOLBAR_DELETE');
+				ToolbarHelper::deleteList('', 'recommendations.delete', 'JTOOLBAR_DELETE');
 			}
 
 			if (isset($this->items[0]->state))
@@ -118,12 +118,12 @@ class JlikeViewRecommendations extends HtmlView
 			{
 				if ($state->get('filter.state') == -2 && $canDo->get('core.delete'))
 				{
-					ToolbarHelper::deleteList('', 'recommendations.delete', 'TOOLBAR_EMPTY_TRASH');
+					ToolbarHelper::deleteList('', 'recommendations.delete', 'JTOOLBAR_EMPTY_TRASH');
 					ToolbarHelper::divider();
 				}
 				elseif ($canDo->get('core.edit.state'))
 				{
-					ToolbarHelper::trash('recommendations.trash', 'TOOLBAR_TRASH');
+					ToolbarHelper::trash('recommendations.trash', 'JTOOLBAR_TRASH');
 					ToolbarHelper::divider();
 				}
 			}
@@ -134,11 +134,11 @@ class JlikeViewRecommendations extends HtmlView
 			}
 
 			// Set sidebar action - New in 3.0
-			HTMLHelperSidebar::setAction('index.php?option=com_jlike&view=recommendations');
+			JHtmlSidebar::setAction('index.php?option=com_jlike&view=recommendations');
 
 			$this->extra_sidebar = '';
 
-			HTMLHelperSidebar::addFilter(
+			JHtmlSidebar::addFilter(
 				Text::_('JOPTION_SELECT_PUBLISHED'),
 				'filter_published',
 				HTMLHelper::_('select.options', HTMLHelper::_('jgrid.publishedOptions'), "value", "text", $this->state->get('filter.state'), true)

@@ -124,14 +124,14 @@ class TjfieldsViewRegions extends HtmlView
 		{
 			if ($canDo->get('core.create'))
 			{
-				ToolbarHelper::addNew('region.add', 'TOOLBAR_NEW');
+				ToolbarHelper::addNew('region.add', 'JTOOLBAR_NEW');
 			}
 		}
 
 		if (JVERSION >= '4.0.0')
 		{
 			$dropdown = $bar->dropdownButton('status-group')
-				->text('TOOLBAR_CHANGE_STATUS')
+				->text('JTOOLBAR_CHANGE_STATUS')
 				->toggleSplit(false)
 				->icon('icon-ellipsis-h')
 				->buttonClass('btn btn-action')
@@ -147,8 +147,8 @@ class TjfieldsViewRegions extends HtmlView
 				if (JVERSION < '4.0.0')
 				{
 					ToolbarHelper::divider();
-					ToolbarHelper::custom('regions.publish', 'publish.png', 'publish_f2.png', 'TOOLBAR_PUBLISH', true);
-					ToolbarHelper::custom('regions.unpublish', 'unpublish.png', 'unpublish_f2.png', 'TOOLBAR_UNPUBLISH', true);
+					ToolbarHelper::custom('regions.publish', 'publish.png', 'publish_f2.png', 'JTOOLBAR_PUBLISH', true);
+					ToolbarHelper::custom('regions.unpublish', 'unpublish.png', 'unpublish_f2.png', 'JTOOLBAR_UNPUBLISH', true);
 				}
 				else
 				{
@@ -165,11 +165,7 @@ class TjfieldsViewRegions extends HtmlView
 			ToolbarHelper::preferences('com_tjfields');
 		}
 
-		if (JVERSION >= '3.0')
-		{
-			// Set sidebar action
-			HTMLHelperSidebar::setAction('index.php?option=com_tjfields&view=regions');
-		}
+			// Note: HTMLHelperSidebar was removed in Joomla 4+
 
 		$this->extra_sidebar = '';
 	}

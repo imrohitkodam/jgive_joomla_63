@@ -91,7 +91,7 @@ class JgiveViewIndividual extends HtmlView
 		ToolbarHelper::save2new('individual.save2new');
 		ToolbarHelper::cancel(
 			'individual.cancel',
-			$isNew ? 'TOOLBAR_CANCEL' : 'TOOLBAR_CLOSE'
+			$isNew ? 'JTOOLBAR_CANCEL' : 'JTOOLBAR_CLOSE'
 		);
 	}
 

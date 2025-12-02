@@ -21,7 +21,7 @@ use Joomla\CMS\HTML\HTMLHelper;
  *
  * @since  1.0.0
  */
-class JFormFieldIntegrations extends JFormField
+class JFormFieldIntegrations extends FormField
 {
 	/**
 	 * Function to genarate html of custom element

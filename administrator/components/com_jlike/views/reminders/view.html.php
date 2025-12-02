@@ -82,13 +82,13 @@ class JlikeViewReminders extends HtmlView
 		{
 			if ($canDo->get('core.create'))
 			{
-				ToolbarHelper::addNew('reminder.add', 'TOOLBAR_NEW');
+				ToolbarHelper::addNew('reminder.add', 'JTOOLBAR_NEW');
 				ToolbarHelper::custom('reminders.duplicate', 'copy.png', 'copy_f2.png', 'TOOLBAR_DUPLICATE', true);
 			}
 
 			if ($canDo->get('core.edit') && isset($this->items[0]))
 			{
-				ToolbarHelper::editList('reminder.edit', 'TOOLBAR_EDIT');
+				ToolbarHelper::editList('reminder.edit', 'JTOOLBAR_EDIT');
 			}
 		}
 
@@ -97,18 +97,18 @@ class JlikeViewReminders extends HtmlView
 			if (isset($this->items[0]->state))
 			{
 				ToolbarHelper::divider();
-				ToolbarHelper::custom('reminders.publish', 'publish.png', 'publish_f2.png', 'TOOLBAR_PUBLISH', true);
-				ToolbarHelper::custom('reminders.unpublish', 'unpublish.png', 'unpublish_f2.png', 'TOOLBAR_UNPUBLISH', true);
+				ToolbarHelper::custom('reminders.publish', 'publish.png', 'publish_f2.png', 'JTOOLBAR_PUBLISH', true);
+				ToolbarHelper::custom('reminders.unpublish', 'unpublish.png', 'unpublish_f2.png', 'JTOOLBAR_UNPUBLISH', true);
 			}
 			elseif (isset($this->items[0]))
 			{
 				// If this component does not use state then show a direct delete button as we can not trash
-				ToolbarHelper::deleteList('', 'reminders.delete', 'TOOLBAR_DELETE');
+				ToolbarHelper::deleteList('', 'reminders.delete', 'JTOOLBAR_DELETE');
 			}
 
 			if (isset($this->items[0]->checked_out))
 			{
-				ToolbarHelper::custom('reminders.checkin', 'checkin.png', 'checkin_f2.png', 'TOOLBAR_CHECKIN', true);
+				ToolbarHelper::custom('reminders.checkin', 'checkin.png', 'checkin_f2.png', 'JTOOLBAR_CHECKIN', true);
 			}
 		}
 
@@ -117,12 +117,12 @@ class JlikeViewReminders extends HtmlView
 		{
 			if ($state->get('filter.state') == -2 && $canDo->get('core.delete'))
 			{
-				ToolbarHelper::deleteList('', 'reminders.delete', 'TOOLBAR_EMPTY_TRASH');
+				ToolbarHelper::deleteList('', 'reminders.delete', 'JTOOLBAR_EMPTY_TRASH');
 				ToolbarHelper::divider();
 			}
 			elseif ($canDo->get('core.edit.state'))
 			{
-				ToolbarHelper::trash('reminders.trash', 'TOOLBAR_TRASH');
+				ToolbarHelper::trash('reminders.trash', 'JTOOLBAR_TRASH');
 				ToolbarHelper::divider();
 			}
 		}
@@ -136,7 +136,7 @@ class JlikeViewReminders extends HtmlView
 		}
 
 		// Set sidebar action - New in 3.0
-		HTMLHelperSidebar::setAction('index.php?option=com_jlike&view=reminders');
+		JHtmlSidebar::setAction('index.php?option=com_jlike&view=reminders');
 
 		$this->extra_sidebar = '';
 	}

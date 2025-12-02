@@ -18,7 +18,7 @@ use Joomla\CMS\HTML\HTMLHelper;
 /**
  * Supports an HTML select list of categories
  */
-class JFormFieldCustomfield extends JFormField
+class JFormFieldCustomfield extends FormField
 {
 	/**
 	 * The form field type.

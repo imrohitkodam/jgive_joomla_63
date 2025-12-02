@@ -24,7 +24,7 @@ $document = Factory::getDocument();
 HTMLHelper::_('stylesheet', 'media/com_jgive/css/jgive_bs3.css');
 
 $campaignDetailUrl = Uri::root() . substr(
-JRoute::_('index.php?option=com_jgive&view=campaign&layout=default&id=' . (int) $campaign->id . '&Itemid=' . $otherData['allCampaignsItemid']),
+Route::_('index.php?option=com_jgive&view=campaign&layout=default&id=' . (int) $campaign->id . '&Itemid=' . $otherData['allCampaignsItemid']),
 strlen(Uri::base(true)) + 1
 );
 $campImg = Uri::root() . 'media/com_jgive/images/default_campaign.png';

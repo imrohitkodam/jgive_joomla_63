@@ -115,72 +115,72 @@ class JLikeHelper
 				break;
 			}
 
-			HTMLHelperSidebar::addEntry(
+			JHtmlSidebar::addEntry(
 				Text::_('COM_JLIKE_DASHBOARD'),
 				'index.php?option=com_jlike&view=dashboard',
 				$dashboard
 			);
-			HTMLHelperSidebar::addEntry(
+			JHtmlSidebar::addEntry(
 				Text::_('COM_JLIKE_ELEMENT_CONFIG'),
 				'index.php?option=com_jlike&view=element_config',
 				$element_config
 			);
-			HTMLHelperSidebar::addEntry(
+			JHtmlSidebar::addEntry(
 				Text::_('COM_JLIKE_BUTTON_SETTINGS'),
 				'index.php?option=com_jlike&view=buttonset',
 				$buttonset
 			);
-			HTMLHelperSidebar::addEntry(
+			JHtmlSidebar::addEntry(
 				Text::_('COM_JLIKE_TITLE_ANNOTATIONS'),
 				'index.php?option=com_jlike&view=annotations',
 				$annotations
 			);
-			HTMLHelperSidebar::addEntry(
+			JHtmlSidebar::addEntry(
 				Text::_('COM_JLIKE_TITLE_ABOUT'),
 				'index.php?option=com_jlike&view=about',
 				$about
 			);
-			HTMLHelperSidebar::addEntry(
+			JHtmlSidebar::addEntry(
 				Text::_('COM_JLIKE_TITLE_REMINDERS'),
 				'index.php?option=com_jlike&view=reminders',
 				$reminders
 			);
-			HTMLHelperSidebar::addEntry(
+			JHtmlSidebar::addEntry(
 				Text::_('COM_JLIKE_TITLE_PATHS_TYPES'),
 				'index.php?option=com_jlike&view=types',
 				$types
 			);
-			HTMLHelperSidebar::addEntry(
+			JHtmlSidebar::addEntry(
 				Text::_('COM_JLIKE_TITLE_PATHS'),
 				'index.php?option=com_jlike&view=paths',
 				$paths
 			);
 
-			HTMLHelperSidebar::addEntry(
+			JHtmlSidebar::addEntry(
 				Text::_('COM_JLIKE_TITLE_CONTENTS'),
 				'index.php?option=com_jlike&view=contents',
 				$contents
 			);
 
-			HTMLHelperSidebar::addEntry(
+			JHtmlSidebar::addEntry(
 				Text::_('COM_JLIKE_TITLE_RATING_TYPES'),
 				'index.php?option=com_jlike&view=ratingtypes',
 				$ratingtypes
 			);
 
-			HTMLHelperSidebar::addEntry(
+			JHtmlSidebar::addEntry(
 				Text::_('COM_JLIKE_TITLE_VIEW_RATING'),
 				'index.php?option=com_jlike&view=ratings',
 				$ratings
 			);
 
-			/*HTMLHelperSidebar::addEntry(
+			/*JHtmlSidebar::addEntry(
 				Text::_('COM_JLIKE_TITLE_PATH_NODE_GRAPH'),
 				'index.php?option=com_jlike&view=pathnodegraphs',
 				$pathNodeGraphs
 			);*/
 
-			/*HTMLHelperSidebar::addEntry(
+			/*JHtmlSidebar::addEntry(
 				Text::_('COM_JLIKE_TITLE_PATH_CATEGORIES'),
 				'index.php?option=com_categories&view=categories&extension=com_jlike.paths',
 				$categories == 'categories'

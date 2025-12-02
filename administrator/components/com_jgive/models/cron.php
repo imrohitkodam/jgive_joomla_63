@@ -22,7 +22,7 @@ use Joomla\CMS\Uri\Uri;
  * @package  JGive
  * @since    1.8
  */
-class JFormFieldCron extends JFormField
+class JFormFieldCron extends FormField
 {
 	/**
 	 * The form field type.

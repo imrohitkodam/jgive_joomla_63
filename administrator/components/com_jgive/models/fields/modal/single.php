@@ -24,7 +24,7 @@ use Joomla\CMS\Language\Text;
  * @package  JGive
  * @since    1.8
  */
-class JFormFieldModal_Single extends JFormField
+class JFormFieldModal_Single extends FormField
 {
 	/**
 	 * field type

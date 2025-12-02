@@ -140,13 +140,13 @@ class TjnotificationsViewSubscriptions extends HtmlView
 			{
 				ToolbarHelper::divider();
 				// Updated for Joomla 6 - removed icon parameters
-				ToolbarHelper::publish('subscriptions.publish', 'TOOLBAR_PUBLISH', true);
-				ToolbarHelper::unpublish('subscriptions.unpublish', 'TOOLBAR_UNPUBLISH', true);
+				ToolbarHelper::publish('subscriptions.publish', 'JTOOLBAR_PUBLISH', true);
+				ToolbarHelper::unpublish('subscriptions.unpublish', 'JTOOLBAR_UNPUBLISH', true);
 			}
 			elseif (isset($this->items[0]))
 			{
 				// If this component does not use state then show a direct delete button as we can not trash
-				ToolbarHelper::deleteList('', 'subscriptions.delete', 'TOOLBAR_DELETE');
+				ToolbarHelper::deleteList('', 'subscriptions.delete', 'JTOOLBAR_DELETE');
 			}
 
 			/*if (isset($this->items[0]->state))
@@ -158,7 +158,7 @@ class TjnotificationsViewSubscriptions extends HtmlView
 			if (isset($this->items[0]->checked_out))
 			{
 				// Updated for Joomla 6 - removed icon parameters
-				ToolbarHelper::checkin('subscriptions.checkin', 'TOOLBAR_CHECKIN', true);
+				ToolbarHelper::checkin('subscriptions.checkin', 'JTOOLBAR_CHECKIN', true);
 			}
 		}
 
@@ -167,7 +167,7 @@ class TjnotificationsViewSubscriptions extends HtmlView
 		{
 			if ($state->get('filter.state') == -2 && $canDo->get('core.delete'))
 			{
-				ToolbarHelper::deleteList('', 'subscriptions.delete', 'TOOLBAR_EMPTY_TRASH');
+				ToolbarHelper::deleteList('', 'subscriptions.delete', 'JTOOLBAR_EMPTY_TRASH');
 				ToolbarHelper::divider();
 			}
 			elseif ($canDo->get('core.edit.state'))

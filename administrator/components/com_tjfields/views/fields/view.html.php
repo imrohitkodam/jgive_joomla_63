@@ -13,6 +13,7 @@ use Joomla\CMS\MVC\View\HtmlView;
 use Joomla\CMS\Factory;
 use Joomla\CMS\HTML\HTMLHelper;
 use Joomla\CMS\Toolbar\Toolbar;
+use Joomla\CMS\Toolbar\ToolbarHelper;
 use Joomla\CMS\Language\Text;
 /**
  * View class for list of fields.
@@ -118,7 +119,7 @@ class TjfieldsViewFields extends HtmlView
 		{
 			if ($canDo->get('core.create'))
 			{
-				ToolbarHelper::addNew('field.add', 'TOOLBAR_NEW');
+				ToolbarHelper::addNew('field.add', 'JTOOLBAR_NEW');
 			}
 		}
 
@@ -127,18 +128,18 @@ class TjfieldsViewFields extends HtmlView
 			if (isset($this->items[0]->state))
 			{
 				ToolbarHelper::divider();
-				ToolbarHelper::custom('fields.publish', 'publish.png', 'publish_f2.png', 'TOOLBAR_PUBLISH', true);
-				ToolbarHelper::custom('fields.unpublish', 'unpublish.png', 'unpublish_f2.png', 'TOOLBAR_UNPUBLISH', true);
+				ToolbarHelper::custom('fields.publish', 'publish.png', 'publish_f2.png', 'JTOOLBAR_PUBLISH', true);
+				ToolbarHelper::custom('fields.unpublish', 'unpublish.png', 'unpublish_f2.png', 'JTOOLBAR_UNPUBLISH', true);
 			}
 			elseif (isset($this->items[0]))
 			{
 				// If this component does not use state then show a direct delete button as we can not trash
-				ToolbarHelper::deleteList('', 'fields.delete', 'TOOLBAR_DELETE');
+				ToolbarHelper::deleteList('', 'fields.delete', 'JTOOLBAR_DELETE');
 			}
 
 			if (isset($this->items[0]->checked_out))
 			{
-				ToolbarHelper::custom('fields.checkin', 'checkin.png', 'checkin_f2.png', 'TOOLBAR_CHECKIN', true);
+				ToolbarHelper::custom('fields.checkin', 'checkin.png', 'checkin_f2.png', 'JTOOLBAR_CHECKIN', true);
 			}
 		}
 
@@ -147,12 +148,12 @@ class TjfieldsViewFields extends HtmlView
 		{
 			if ($state->get('filter.state') == -2 && $canDo->get('core.delete'))
 			{
-				ToolbarHelper::deleteList('', 'fields.delete', 'TOOLBAR_EMPTY_TRASH');
+				ToolbarHelper::deleteList('', 'fields.delete', 'JTOOLBAR_EMPTY_TRASH');
 				ToolbarHelper::divider();
 			}
 			elseif ($canDo->get('core.edit.state'))
 			{
-				ToolbarHelper::trash('fields.trash', 'TOOLBAR_TRASH');
+				ToolbarHelper::trash('fields.trash', 'JTOOLBAR_TRASH');
 				ToolbarHelper::divider();
 			}
 		}

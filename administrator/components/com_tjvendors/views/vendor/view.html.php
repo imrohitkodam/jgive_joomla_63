@@ -156,8 +156,8 @@ class TjvendorsViewVendor extends HtmlView
 		// If not checked out, can save the item.
 		if (!$checkedOut && ($canDo->get('core.edit') || ($canDo->get('core.create'))))
 		{
-			ToolbarHelper::apply('vendor.apply', 'TOOLBAR_APPLY');
-			ToolbarHelper::save('vendor.save', 'TOOLBAR_SAVE');
+			ToolbarHelper::apply('vendor.apply', 'JTOOLBAR_APPLY');
+			ToolbarHelper::save('vendor.save', 'JTOOLBAR_SAVE');
 		}
 
 		if (!$checkedOut && ($canDo->get('core.create')))
@@ -167,11 +167,11 @@ class TjvendorsViewVendor extends HtmlView
 
 		if (empty($this->item->vendor_id))
 		{
-			ToolbarHelper::cancel('vendor.cancel', 'TOOLBAR_CANCEL');
+			ToolbarHelper::cancel('vendor.cancel', 'JTOOLBAR_CANCEL');
 		}
 		else
 		{
-			ToolbarHelper::cancel('vendor.cancel', 'TOOLBAR_CLOSE');
+			ToolbarHelper::cancel('vendor.cancel', 'JTOOLBAR_CLOSE');
 		}
 	}
 }

@@ -92,11 +92,11 @@ class TjvendorsViewPayout extends HtmlView
 
 		if (empty($this->item->id))
 		{
-			ToolbarHelper::cancel('payout.cancel', 'TOOLBAR_CANCEL');
+			ToolbarHelper::cancel('payout.cancel', 'JTOOLBAR_CANCEL');
 		}
 		else
 		{
-			ToolbarHelper::cancel('payout.cancel', 'TOOLBAR_CLOSE');
+			ToolbarHelper::cancel('payout.cancel', 'JTOOLBAR_CLOSE');
 		}
 	}
 }

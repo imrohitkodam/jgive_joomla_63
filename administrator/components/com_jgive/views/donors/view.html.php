@@ -16,6 +16,7 @@ use Joomla\CMS\Factory;
 use Joomla\CMS\Language\Text;
 use Joomla\CMS\HTML\HTMLHelper;
 use Joomla\CMS\Toolbar\ToolbarHelper;
+use Joomla\CMS\Toolbar\Toolbar;
 
 jimport('techjoomla.tjtoolbar.button.csvexport');
 
@@ -125,8 +126,7 @@ class JGiveViewDonors extends HtmlView
 			ToolbarHelper::preferences('com_jgive');
 		}
 
-		// Set sidebar action - New in 3.0
-		HTMLHelperSidebar::setAction('index.php?option=com_jgive&view=donors');
+		// Note: HTMLHelperSidebar was removed in Joomla 4+
 
 		$this->extra_sidebar = '';
 	}

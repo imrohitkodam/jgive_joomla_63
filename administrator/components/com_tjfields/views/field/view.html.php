@@ -108,8 +108,8 @@ class TjfieldsViewField extends HtmlView
 		// If not checked out, can save the item.
 		if (!$checkedOut && ($canDo->get('core.edit') || ($canDo->get('core.create'))))
 		{
-			ToolbarHelper::apply('field.apply', 'TOOLBAR_APPLY');
-			ToolbarHelper::save('field.save', 'TOOLBAR_SAVE');
+			ToolbarHelper::apply('field.apply', 'JTOOLBAR_APPLY');
+			ToolbarHelper::save('field.save', 'JTOOLBAR_SAVE');
 		}
 
 		if (!$checkedOut && ($canDo->get('core.create')))
@@ -125,11 +125,11 @@ class TjfieldsViewField extends HtmlView
 
 		if (empty($this->item->id))
 		{
-			ToolbarHelper::cancel('field.cancel', 'TOOLBAR_CANCEL');
+			ToolbarHelper::cancel('field.cancel', 'JTOOLBAR_CANCEL');
 		}
 		else
 		{
-			ToolbarHelper::cancel('field.cancel', 'TOOLBAR_CLOSE');
+			ToolbarHelper::cancel('field.cancel', 'JTOOLBAR_CLOSE');
 		}
 	}
 }
